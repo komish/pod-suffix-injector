@@ -2,9 +2,9 @@
 
 **PodSuffixInjector** is a controller that injects the generated suffix appended to podnames when `generateName` is used to determine the name of the Pod. The suffix will be stored in a label `pod-suffix` on the pod itself.
 
-Controller logic is functional, in-cluster assets (RBAC, etc) have not been tested.
+Controller logic is functional, in-cluster assets (RBAC, etc) have not been tested. The controller will currently run against all namespaces.
 
-To use, run the controller using `make run` and then create pods (with a controller reference) with the label `inject-pod-suffix: "true"`.
+To use, run the controller using `make run` and then create deployments (with a controller reference) with the label `inject-pod-suffix: "true"` in the pod spec template.
 
 Ex:
 
