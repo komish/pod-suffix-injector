@@ -4,7 +4,7 @@
 
 Controller logic is functional, in-cluster assets (RBAC, etc) have not been tested.
 
-To use, run the controller and then create pods (with an controller reference) with the label `inject-pod-suffix: "true"`.
+To use, run the controller using `make run` and then create pods (with a controller reference) with the label `inject-pod-suffix: "true"`.
 
 Ex:
 
